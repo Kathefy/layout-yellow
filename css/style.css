@@ -79,6 +79,7 @@ span {
 }
 .page-nav-list li {
   display: inline-block;
+  margin-left: -4px;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 .page-nav-list li:last-child {
@@ -111,7 +112,7 @@ span {
 .main-banner-text {
   padding: 60px 0;
   line-height: 1.5;
-  color: #828282;
+  color: rgb(132, 107, 24);
 }
 .main-banner-btn {
   width: 200px;
@@ -157,7 +158,7 @@ span {
   padding: 20px 0;
 }
 .article-text {
-  color: #828282;
+  color: rgb(132, 107, 24);
   padding-bottom: 30px;
 }
 .article-btn {
@@ -202,7 +203,7 @@ span {
   text-transform: uppercase;
 }
 .gallery-text {
-  color: #828282;
+  color: rgb(132, 107, 24);
   padding-bottom: 30px;
 }
 .gallery-btn {
@@ -237,7 +238,7 @@ span {
   margin-bottom: 70px;
 }
 .paralax-text {
-  color: #828282;
+  color: rgb(132, 107, 24);
   text-align: justify;
 }
 .paralax-title {
@@ -266,6 +267,9 @@ span {
   font-weight: bold;
   padding: 10px 0;
   transition: 0.5s all;
+}
+.page-footer-nav-list a:hover {
+  text-shadow: 1px 1px #fff;
 }
 .page-footer-copyright {
   float: right;
