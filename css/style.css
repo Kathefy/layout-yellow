@@ -26,10 +26,31 @@ span {
   margin-left: -10px;
   margin-right: -10px;
 }
+.col-1-2 {
+  width: 50%;
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 .col-1-3 {
   float: left;
   width: 33.3333%;
   padding: 0 10px;
+}
+.col-1-4 {
+  float: left;
+  width: 25%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  transition: 0.5s all;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 /* ------------------------------------------ */
 /* main-hero */
@@ -92,19 +113,12 @@ span {
   line-height: 1.5;
   color: #828282;
 }
-.btn {
-  background: #000;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
+.main-banner-btn {
   width: 200px;
   line-height: 60px;
   margin: 0 10px;
-  font-weight: bold;
-  transition: 0.5s all;
 }
-.btn:hover {
+.main-banner-btn:hover {
   background: #fff;
   color: #000;
 }
@@ -147,13 +161,6 @@ span {
   padding-bottom: 30px;
 }
 .article-btn {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  transition: 0.5s all;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
   padding: 15px 40px;
   margin-bottom: 100px;
   border: 1px solid #000;
@@ -162,4 +169,105 @@ span {
   background: rgb(248, 218, 106);
   color: #000;
   border: 1px solid #000;
+}
+/* ------------------------------------------ */
+/* main-gallery */
+/* ------------------------------------------ */
+.main-gallery {
+  background: rgb(235, 205, 102);
+  padding-top: 100px;
+}
+.main-gallery-title {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.main-gallery-title:after {
+  content: "";
+  display: block;
+  width: 120px;
+  border: 1px solid #000;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+.gallery {
+  text-align: center;
+}
+.gallery-img {
+  border-radius: 50%;
+}
+.gallery-title {
+  padding: 30px 0;
+  text-transform: uppercase;
+}
+.gallery-text {
+  color: #828282;
+  padding-bottom: 30px;
+}
+.gallery-btn {
+  padding: 15px 40px;
+  margin-bottom: 100px;
+  border: 1px solid #000;
+}
+.gallery-btn:hover {
+  background: rgb(235, 205, 102);
+  color: #000;
+  border: 1px solid #000;
+}
+/* ------------------------------------------ */
+/* main-paralax */
+/* ------------------------------------------ */
+.main-paralax {
+  background: rgb(248, 218, 106);
+  padding: 100px 0;
+}
+.main-paralax-title {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.main-paralax-title:after {
+  content: "";
+  display: block;
+  width: 120px;
+  border: 1px solid #000;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+.paralax-text {
+  color: #828282;
+  text-align: justify;
+}
+.paralax-title {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* ------------------------------------------ */
+/* main-footer */
+/* ------------------------------------------ */
+.main-footer {
+  background: #000;
+  padding: 50px 0;
+}
+.page-footer-nav {
+  display: inline-block;
+}
+.page-footer-nav:first-child {
+  padding-right: 120px;
+}
+.page-footer-nav-list a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: 0.5s all;
+}
+.page-footer-copyright {
+  float: right;
+  color: #828282;
 }
