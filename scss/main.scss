@@ -1,3 +1,10 @@
+$colorWhite: #fff;
+$colorBlack: #000;
+$colorText: rgb(132, 107, 24);
+$backgroundLight: rgb(248, 218, 106);
+$backgroundDark: rgb(235, 205, 102);
+$colorGrey: #828282;
+
 * {
   box-sizing: border-box;
 }
@@ -20,7 +27,7 @@ h3 {
   font-family: "Roboto Condensed", sans-serif;
 }
 span {
-  color: #fff;
+  color: $colorWhite;
 }
 .row {
   margin-left: -10px;
@@ -45,8 +52,8 @@ span {
 }
 .btn {
   display: inline-block;
-  background: #000;
-  color: #fff;
+  background: $colorBlack;
+  color: $colorWhite;
   transition: 0.5s all;
   text-decoration: none;
   text-transform: uppercase;
@@ -70,7 +77,7 @@ span {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 30px;
-  color: #000;
+  color: $colorBlack;
   line-height: 90px;
   font-weight: bold;
 }
@@ -87,18 +94,18 @@ span {
 }
 .page-nav-list a {
   display: block;
-  color: #000;
+  color: $colorBlack;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 90px;
   padding: 0 15px;
-  color: #fff;
+  color: $colorWhite;
   transition: 0.5s all;
 }
 .page-nav-list a:hover {
-  background: #fff;
-  color: black;
+  background: $colorWhite;
+  color: $colorBlack;
 }
 .main-banner {
   padding-top: 230px;
@@ -112,7 +119,7 @@ span {
 .main-banner-text {
   padding: 60px 0;
   line-height: 1.5;
-  color: rgb(132, 107, 24);
+  color: $colorText;
 }
 .main-banner-btn {
   width: 200px;
@@ -120,8 +127,8 @@ span {
   margin: 0 10px;
 }
 .main-banner-btn:hover {
-  background: #fff;
-  color: #000;
+  background: $colorWhite;
+  color: $colorBlack;
 }
 .main-banner-link {
   margin-top: 250px;
@@ -135,7 +142,7 @@ span {
 /* main-articles */
 /* ------------------------------------------ */
 .main-articles {
-  background: rgb(248, 218, 106);
+  background: $backgroundLight;
 }
 .main-articles-text {
   padding: 15px 0;
@@ -149,7 +156,7 @@ span {
   content: "";
   display: block;
   width: 120px;
-  border: 1px solid #000;
+  border: 1px solid $colorBlack;
   margin-top: 20px;
   margin-bottom: 70px;
 }
@@ -158,24 +165,24 @@ span {
   padding: 20px 0;
 }
 .article-text {
-  color: rgb(132, 107, 24);
+  color: $colorText;
   padding-bottom: 30px;
 }
 .article-btn {
   padding: 15px 40px;
   margin-bottom: 100px;
-  border: 1px solid #000;
+  border: 1px solid $colorBlack;
 }
 .article-btn:hover {
-  background: rgb(248, 218, 106);
-  color: #000;
-  border: 1px solid #000;
+  background: $backgroundLight;
+  color: $colorBlack;
+  border: 1px solid $colorBlack;
 }
 /* ------------------------------------------ */
 /* main-gallery */
 /* ------------------------------------------ */
 .main-gallery {
-  background: rgb(235, 205, 102);
+  background: $backgroundDark;
   padding-top: 100px;
 }
 .main-gallery-title {
@@ -188,7 +195,7 @@ span {
   content: "";
   display: block;
   width: 120px;
-  border: 1px solid #000;
+  border: 1px solid $colorBlack;
   margin-top: 20px;
   margin-bottom: 70px;
 }
@@ -203,24 +210,24 @@ span {
   text-transform: uppercase;
 }
 .gallery-text {
-  color: rgb(132, 107, 24);
+  color: $colorText;
   padding-bottom: 30px;
 }
 .gallery-btn {
   padding: 15px 40px;
   margin-bottom: 100px;
-  border: 1px solid #000;
+  border: 1px solid $colorBlack;
 }
 .gallery-btn:hover {
-  background: rgb(235, 205, 102);
-  color: #000;
-  border: 1px solid #000;
+  background: $backgroundDark;
+  color: $colorBlack;
+  border: 1px solid $colorBlack;
 }
 /* ------------------------------------------ */
 /* main-paralax */
 /* ------------------------------------------ */
 .main-paralax {
-  background: rgb(248, 218, 106);
+  background: $backgroundLight;
   padding: 100px 0;
 }
 .main-paralax-title {
@@ -233,12 +240,12 @@ span {
   content: "";
   display: block;
   width: 120px;
-  border: 1px solid #000;
+  border: 1px solid $colorBlack;
   margin-top: 20px;
   margin-bottom: 70px;
 }
 .paralax-text {
-  color: rgb(132, 107, 24);
+  color: $colorText;
   text-align: justify;
 }
 .paralax-title {
@@ -250,7 +257,7 @@ span {
 /* main-footer */
 /* ------------------------------------------ */
 .main-footer {
-  background: #000;
+  background: $colorBlack;
   padding: 50px 0;
 }
 .page-footer-nav {
@@ -261,7 +268,7 @@ span {
 }
 .page-footer-nav-list a {
   display: inline-block;
-  color: #fff;
+  color: $colorWhite;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -269,9 +276,9 @@ span {
   transition: 0.5s all;
 }
 .page-footer-nav-list a:hover {
-  text-shadow: 1px 1px #fff;
+  text-shadow: 1px 1px $colorWhite;
 }
 .page-footer-copyright {
   float: right;
-  color: #828282;
+  color: $colorGrey;
 }
