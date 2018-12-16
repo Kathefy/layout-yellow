@@ -8,11 +8,14 @@ $colorGrey: #828282;
 * {
   box-sizing: border-box;
 }
-.clearfix:after {
-  content: "";
-  clear: both;
-  display: table;
+.clearfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
+
 .container {
   max-width: 1090px;
   margin: 0 auto;
@@ -67,218 +70,226 @@ span {
   background-image: url(../images/banner-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  .page-header {
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.1);
+    .page-logo {
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 30px;
+      color: $colorBlack;
+      line-height: 90px;
+      font-weight: bold;
+    }
+    .page-nav {
+      float: right;
+      .page-nav-list {
+        li {
+          display: inline-block;
+          margin-left: -4px;
+          border-right: 1px solid rgba(255, 255, 255, 0.5);
+          &:last-child {
+            border: none;
+          }
+          a {
+            display: block;
+            color: $colorBlack;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 90px;
+            padding: 0 15px;
+            color: $colorWhite;
+            transition: 0.5s all;
+            &:hover {
+              background: $colorWhite;
+              color: $colorBlack;
+            }
+          }
+        }
+      }
+    }
+  }
+  .main-banner {
+    padding-top: 230px;
+    text-align: center;
+    .main-banner-title {
+      font-size: 100px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .main-banner-text {
+      padding: 60px 0;
+      line-height: 1.5;
+      color: $colorText;
+    }
+    .main-banner-btn {
+      width: 200px;
+      line-height: 60px;
+      margin: 0 10px;
+      &:hover {
+        background: $colorWhite;
+        color: $colorBlack;
+      }
+      .main-banner-link {
+        margin-top: 250px;
+        display: block;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
 }
-.page-header {
-  height: 90px;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.page-logo {
-  display: inline-block;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 30px;
-  color: $colorBlack;
-  line-height: 90px;
-  font-weight: bold;
-}
-.page-nav {
-  float: right;
-}
-.page-nav-list li {
-  display: inline-block;
-  margin-left: -4px;
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-}
-.page-nav-list li:last-child {
-  border: none;
-}
-.page-nav-list a {
-  display: block;
-  color: $colorBlack;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  line-height: 90px;
-  padding: 0 15px;
-  color: $colorWhite;
-  transition: 0.5s all;
-}
-.page-nav-list a:hover {
-  background: $colorWhite;
-  color: $colorBlack;
-}
-.main-banner {
-  padding-top: 230px;
-  text-align: center;
-}
-.main-banner-title {
-  font-size: 100px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.main-banner-text {
-  padding: 60px 0;
-  line-height: 1.5;
-  color: $colorText;
-}
-.main-banner-btn {
-  width: 200px;
-  line-height: 60px;
-  margin: 0 10px;
-}
-.main-banner-btn:hover {
-  background: $colorWhite;
-  color: $colorBlack;
-}
-.main-banner-link {
-  margin-top: 250px;
-  display: block;
-}
-.main-banner-link img {
-  width: 30px;
-  height: 30px;
-}
+
 /* ------------------------------------------ */
 /* main-articles */
 /* ------------------------------------------ */
 .main-articles {
   background: $backgroundLight;
+  .main-articles-text {
+    padding: 15px 0;
+  }
+  .main-articles-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:after {
+      content: "";
+      display: block;
+      width: 120px;
+      border: 1px solid $colorBlack;
+      margin-top: 20px;
+      margin-bottom: 70px;
+    }
+  }
+  .article-title {
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  .article-text {
+    color: $colorText;
+    padding-bottom: 30px;
+  }
+  .article-btn {
+    padding: 15px 40px;
+    margin-bottom: 100px;
+    border: 1px solid $colorBlack;
+    &:hover {
+      background: $backgroundLight;
+      color: $colorBlack;
+      border: 1px solid $colorBlack;
+    }
+  }
 }
-.main-articles-text {
-  padding: 15px 0;
-}
-.main-articles-title {
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.main-articles-title:after {
-  content: "";
-  display: block;
-  width: 120px;
-  border: 1px solid $colorBlack;
-  margin-top: 20px;
-  margin-bottom: 70px;
-}
-.article-title {
-  text-transform: uppercase;
-  padding: 20px 0;
-}
-.article-text {
-  color: $colorText;
-  padding-bottom: 30px;
-}
-.article-btn {
-  padding: 15px 40px;
-  margin-bottom: 100px;
-  border: 1px solid $colorBlack;
-}
-.article-btn:hover {
-  background: $backgroundLight;
-  color: $colorBlack;
-  border: 1px solid $colorBlack;
-}
+
 /* ------------------------------------------ */
 /* main-gallery */
 /* ------------------------------------------ */
 .main-gallery {
   background: $backgroundDark;
   padding-top: 100px;
+  .main-gallery-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 0;
+    &:after {
+      content: "";
+      display: block;
+      width: 120px;
+      border: 1px solid $colorBlack;
+      margin-top: 20px;
+      margin-bottom: 70px;
+    }
+  }
+  .gallery {
+    text-align: center;
+    .gallery-img {
+      border-radius: 50%;
+    }
+    .gallery-title {
+      padding: 30px 0;
+      text-transform: uppercase;
+    }
+    .gallery-text {
+      color: $colorText;
+      padding-bottom: 30px;
+    }
+    .gallery-btn {
+      padding: 15px 40px;
+      margin-bottom: 100px;
+      border: 1px solid $colorBlack;
+      &:hover {
+        background: $backgroundDark;
+        color: $colorBlack;
+        border: 1px solid $colorBlack;
+      }
+    }
+  }
 }
-.main-gallery-title {
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 20px 0;
-}
-.main-gallery-title:after {
-  content: "";
-  display: block;
-  width: 120px;
-  border: 1px solid $colorBlack;
-  margin-top: 20px;
-  margin-bottom: 70px;
-}
-.gallery {
-  text-align: center;
-}
-.gallery-img {
-  border-radius: 50%;
-}
-.gallery-title {
-  padding: 30px 0;
-  text-transform: uppercase;
-}
-.gallery-text {
-  color: $colorText;
-  padding-bottom: 30px;
-}
-.gallery-btn {
-  padding: 15px 40px;
-  margin-bottom: 100px;
-  border: 1px solid $colorBlack;
-}
-.gallery-btn:hover {
-  background: $backgroundDark;
-  color: $colorBlack;
-  border: 1px solid $colorBlack;
-}
+
 /* ------------------------------------------ */
 /* main-paralax */
 /* ------------------------------------------ */
 .main-paralax {
   background: $backgroundLight;
   padding: 100px 0;
+  .main-paralax-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 0;
+    &:after {
+      content: "";
+      display: block;
+      width: 120px;
+      border: 1px solid $colorBlack;
+      margin-top: 20px;
+      margin-bottom: 70px;
+    }
+  }
+  .paralax-text {
+    color: $colorText;
+    text-align: justify;
+  }
+  .paralax-title {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }
-.main-paralax-title {
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 20px 0;
-}
-.main-paralax-title:after {
-  content: "";
-  display: block;
-  width: 120px;
-  border: 1px solid $colorBlack;
-  margin-top: 20px;
-  margin-bottom: 70px;
-}
-.paralax-text {
-  color: $colorText;
-  text-align: justify;
-}
-.paralax-title {
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
+
 /* ------------------------------------------ */
 /* main-footer */
 /* ------------------------------------------ */
 .main-footer {
   background: $colorBlack;
   padding: 50px 0;
-}
-.page-footer-nav {
-  display: inline-block;
-}
-.page-footer-nav:first-child {
-  padding-right: 120px;
-}
-.page-footer-nav-list a {
-  display: inline-block;
-  color: $colorWhite;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 10px 0;
-  transition: 0.5s all;
-}
-.page-footer-nav-list a:hover {
-  text-shadow: 1px 1px $colorWhite;
-}
-.page-footer-copyright {
-  float: right;
-  color: $colorGrey;
+  .page-footer-nav {
+    display: inline-block;
+    &v:first-child {
+      padding-right: 120px;
+    }
+    .page-footer-nav-list {
+      a {
+        display: inline-block;
+        color: $colorWhite;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 0;
+        transition: 0.5s all;
+        &:hover {
+          text-shadow: 1px 1px $colorWhite;
+        }
+      }
+    }
+  }
+  .page-footer-copyright {
+    float: right;
+    color: $colorGrey;
+  }
 }
