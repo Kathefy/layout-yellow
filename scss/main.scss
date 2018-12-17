@@ -1,9 +1,5 @@
-$colorWhite: #fff;
-$colorBlack: #000;
-$colorText: rgb(132, 107, 24);
-$backgroundLight: rgb(248, 218, 106);
-$backgroundDark: rgb(235, 205, 102);
-$colorGrey: #828282;
+@import "reset";
+@import "variables";
 
 * {
   box-sizing: border-box;
@@ -15,7 +11,6 @@ $colorGrey: #828282;
     display: table;
   }
 }
-
 .container {
   max-width: 1090px;
   margin: 0 auto;
@@ -30,7 +25,7 @@ h3 {
   font-family: "Roboto Condensed", sans-serif;
 }
 span {
-  color: $colorWhite;
+  color: $colorLight;
 }
 .row {
   margin-left: -10px;
@@ -55,8 +50,8 @@ span {
 }
 .btn {
   display: inline-block;
-  background: $colorBlack;
-  color: $colorWhite;
+  background: $colorDark;
+  color: $colorLight;
   transition: 0.5s all;
   text-decoration: none;
   text-transform: uppercase;
@@ -78,7 +73,7 @@ span {
       text-transform: uppercase;
       text-decoration: none;
       font-size: 30px;
-      color: $colorBlack;
+      color: $colorDark;
       line-height: 90px;
       font-weight: bold;
     }
@@ -94,17 +89,17 @@ span {
           }
           a {
             display: block;
-            color: $colorBlack;
+            color: $colorDark;
             text-decoration: none;
             text-transform: uppercase;
             font-weight: bold;
             line-height: 90px;
             padding: 0 15px;
-            color: $colorWhite;
+            color: $colorLight;
             transition: 0.5s all;
             &:hover {
-              background: $colorWhite;
-              color: $colorBlack;
+              background: $colorLight;
+              color: $colorDark;
             }
           }
         }
@@ -129,16 +124,16 @@ span {
       line-height: 60px;
       margin: 0 10px;
       &:hover {
-        background: $colorWhite;
-        color: $colorBlack;
+        background: $colorLight;
+        color: $colorDark;
       }
-      .main-banner-link {
-        margin-top: 250px;
-        display: block;
-        img {
-          width: 30px;
-          height: 30px;
-        }
+    }
+    .main-banner-link {
+      margin-top: 250px;
+      display: block;
+      img {
+        width: 30px;
+        height: 30px;
       }
     }
   }
@@ -160,7 +155,7 @@ span {
       content: "";
       display: block;
       width: 120px;
-      border: 1px solid $colorBlack;
+      border: 1px solid $colorDark;
       margin-top: 20px;
       margin-bottom: 70px;
     }
@@ -176,11 +171,11 @@ span {
   .article-btn {
     padding: 15px 40px;
     margin-bottom: 100px;
-    border: 1px solid $colorBlack;
+    border: 1px solid $colorDark;
     &:hover {
       background: $backgroundLight;
-      color: $colorBlack;
-      border: 1px solid $colorBlack;
+      color: $colorDark;
+      border: 1px solid $colorDark;
     }
   }
 }
@@ -200,7 +195,7 @@ span {
       content: "";
       display: block;
       width: 120px;
-      border: 1px solid $colorBlack;
+      border: 1px solid $colorDark;
       margin-top: 20px;
       margin-bottom: 70px;
     }
@@ -221,11 +216,11 @@ span {
     .gallery-btn {
       padding: 15px 40px;
       margin-bottom: 100px;
-      border: 1px solid $colorBlack;
+      border: 1px solid $colorDark;
       &:hover {
         background: $backgroundDark;
-        color: $colorBlack;
-        border: 1px solid $colorBlack;
+        color: $colorDark;
+        border: 1px solid $colorDark;
       }
     }
   }
@@ -246,7 +241,7 @@ span {
       content: "";
       display: block;
       width: 120px;
-      border: 1px solid $colorBlack;
+      border: 1px solid $colorDark;
       margin-top: 20px;
       margin-bottom: 70px;
     }
@@ -266,7 +261,7 @@ span {
 /* main-footer */
 /* ------------------------------------------ */
 .main-footer {
-  background: $colorBlack;
+  background: $colorDark;
   padding: 50px 0;
   .page-footer-nav {
     display: inline-block;
@@ -276,20 +271,20 @@ span {
     .page-footer-nav-list {
       a {
         display: inline-block;
-        color: $colorWhite;
+        color: $colorLight;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
         padding: 10px 0;
         transition: 0.5s all;
         &:hover {
-          text-shadow: 1px 1px $colorWhite;
+          text-shadow: 1px 1px $colorLight;
         }
       }
     }
   }
   .page-footer-copyright {
     float: right;
-    color: $colorGrey;
+    color: $colorShadow;
   }
 }
